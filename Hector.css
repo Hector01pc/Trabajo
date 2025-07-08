@@ -1,0 +1,114 @@
+/* Fuente base y colores */
+body {
+  margin: 0;
+  font-family: 'Roboto', Arial, sans-serif;
+  background-color: #e4dad9;
+  color: #333;
+}
+
+/* Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #9c361c;
+}
+
+.logo img {
+  height: 50px;
+}
+
+.nav {
+  position: relative;
+}
+
+.hamburger {
+  font-size: 30px;
+  cursor: pointer;
+  display: none;
+  color: white;
+}
+
+#menu-toggle {
+  display: none;
+}
+
+.menu {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+
+.menu li a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+/* Títulos y párrafo principal */
+main h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin: 20px 0;
+}
+
+main p {
+  text-align: center;
+  font-size: 1.2rem;
+  max-width: 800px;
+  margin: 0 auto 30px auto;
+  padding: 0 20px;
+}
+
+/* Imagen centrada */
+.oferta {
+  text-align: center;
+}
+
+.oferta img {
+  max-width: 90%;
+  height: auto;
+  margin: 20px auto;
+  display: block;
+}
+
+/* Menú responsive */
+@media (max-width: 768px) {
+  .hamburger {
+    display: block;
+  }
+
+  .menu {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background-color: #181716;
+    width: 150px;
+    padding: 10px;
+    z-index: 1000;
+  }
+
+  #menu-toggle:checked + .hamburger + .menu {
+    display: flex;
+  }
+}
+
+/* Footer */
+footer {
+  margin-top: 50px;
+  background-color: #3d3d32;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+/* Redes sociales */
+.redes-sociales a {
+  margin: 0 10px;
+  color: white;
+  font-size: 24px;
+  text-decoration: none;
+}

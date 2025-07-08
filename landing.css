@@ -1,0 +1,105 @@
+header{
+    background: color #abdddf;
+    color: #eef1fa;
+}
+
+img{
+    padding: 15px;
+    width: 250px;
+    height: inherit;
+}
+body{
+    background-color:none;
+    font-family:sans-serif-
+}
+h1{
+background-color: rgb(89, 197, 197);
+padding:0;
+display: flex;
+justify-content: center;
+gap: 20px; 
+}
+ h1:hover{
+    background-color: #d6521d;
+    border-style:none;
+    border: width 2px;
+    cursor:pointer;
+
+}
+nav a {
+    color: rgb(15, 10, 10);
+    text-decoration: none;
+
+}
+nav ul{
+    list-style-type:none ;
+    padding:0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+ul li a:hover{
+    background-color: #4798c7;
+    color: #08523f;
+    border-style:none;
+    border: width 2px;
+    cursor:pointer;
+}
+
+main{
+    margin:0;
+    padding:0;
+    display: flex;
+
+}
+.main{
+    flex:1;
+    background-color:#ca7373;
+    padding:20px;
+
+}
+aside{
+   width:50%;
+   max-width:50%;
+   background-color:#e0e0e0;
+   padding:20px;
+   box-sizing: border-box;
+}
+
+footer {
+  background-color: #111;
+  color: rgb(197, 124, 124);
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+  width: 100%;
+}
+
+.redes-sociales {
+  margin-top: 10px;
+}
+
+.redes-sociales a {
+  margin: 0 10px;
+  font-size: 24px;
+  color: white;
+  transition: color 0.3s, transform 0.3s;
+}
+
+.redes-sociales a:hover {
+  color: #b89d30;
+  transform: scale(1.2);
+}
+
+
+
+@media (max-width: 600px) {
+  .social-icons a {
+    font-size: 14px;
+    margin: 0 6px;
+  }
+
+  footer p {
+    font-size: 12px;
+  }
+}
